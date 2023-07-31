@@ -2,7 +2,7 @@
 - 👽 I’m interested.
 - 🌱 I’m currently learning.
 - ❓ I’m looking to collaborate.
-- 📫 How to reach me? (BEtter NOT) hahah.
+- 📫 How to reach me? (better NOT) hahah.
 
   ((this repo to document my CODE life))
 
