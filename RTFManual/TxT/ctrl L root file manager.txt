@@ -1,0 +1,8 @@
+to open file manager as root:
+
+-- click on other locations 
+    Press CTRL+L 
+    #to bring up the address bar.
+    
+type in:
+admin:///

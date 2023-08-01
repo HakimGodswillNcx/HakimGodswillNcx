@@ -1,0 +1,18 @@
+Welcome, to RTF manual 2022/23 the mystery of linux (revealed) everything is a command_line-Related !
+-------
+sudo /opt/lampp/lampp start
+sudo /opt/lampp/lampp stop
+___________________________
+cd /
+sudo nautilus ./
+_______________________________________________
+sudo subl /opt/lampp/htdocs/dashboard/index.php
+_______________________________________________
+sudo apt-get install
+sudo snap install
+____________________
+sudo info gimp
+____________________
+cd Downloads
+./pcsx2.AppImage
+______________________________________________________________________________________________________
