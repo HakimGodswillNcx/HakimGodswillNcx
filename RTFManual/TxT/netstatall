@@ -1,0 +1,45 @@
+sudo watch -n 1 'lsof -i -P -n'
+
+watch -n 1 'netstat -tulpn'
+sudo lsof -i -P -n
+nmap localhost
+
+sudo systemctl restart systemd-resolved
+
+
+sudo systemctl disable systemd-resolved
+sudo systemctl mask systemd-resolved
+
+stop
+start
+enable
+unmask
+
+sudo ufw status
+sudo ufw deny out to 34.107.221.82
+sudo ufw delete deny out to 34.107.221.82
+
+sudo iptables -A OUTPUT -p tcp --dport 1:65535 -d 34.120.208.123 --syn -j DROP
+sudo iptables -D OUTPUT -p tcp --dport 1:65535 -d 34.120.208.123 --syn -j DROP
+# Drop incoming connections from the listed IPs
+sudo iptables -A INPUT -s 192.0.73.2 -j DROP
+
+# Block IP range using iptables
+sudo iptables -A OUTPUT -p tcp --dport 443 -m iprange --src-range 13.0.0.0-13.255.255.255 --syn -j DROP
+
+sudo iptables-save
+sudo systemctl restart NetworkManager
+::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::
+# Allow outgoing connections to specific IPs on port 443
+sudo iptables -A OUTPUT -p tcp --dport 443 -d 34.120.208.123 -j ACCEPT
+sudo iptables -A OUTPUT -p tcp --dport 443 -d 34.107.221.82 -j ACCEPT
+# Add similar rules for other IPs as needed
+
+# Save the rules
+sudo iptables-save
+
+
