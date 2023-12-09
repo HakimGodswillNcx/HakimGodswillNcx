@@ -1,2 +1,35 @@
 Broadcom BCM43142 Drivers on Kali Linux:
+# i did upgrade and install sublime-text and tor before.
+
+sudo apt-get update
+sudo apt-get install linux-image-$(uname -r|sed 's,[^-]*-[^-]*-,,') linux-headers-$(uname -r|sed 's,[^-]*-[^-]*-,,') broadcom-sta-dkms
+sudo modprobe -r b44 b43 b43legacy ssb brcmsmac bcma
+sudo modprobe wl
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Works for the following:
+Broadcom BCM4311, BCM4312, BCM4313, BCM4321, BCM4322, 
+BCM43224, BCM43225, BCM43227, BCM43228, BCM43142, 
+BCM4331, BCM4352, BCM4360 devices (wl) 
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+He flies with his own wings... end.
+####################################################
+# if any FATAL ERROR follow this guide's commants:
+You must have non-free repositories in your sources.list.
+Originally Posted by r_0_y View Post : 
 https://forums.kali.org/showthread.php?29587-Broadcom-BCM43142-Drivers-on-Kali-Linux
+EXAMPLE:
+modprobe: FATAL: 
+Module wl not found in directory /lib/modules/4.3.0-kali-amd64
+Clear all and paste :
+
+Code:
+
+deb http://http.kali.org/kali kali-rolling main contrib non-free
+# For source package access, uncomment the following line
+deb-src http://http.kali.org/kali kali-rolling main contrib non-free
+
+Code:
+
+apt-get update && apt-get dist-upgrade
+
+Reboot in the 4.4.0 kernel
