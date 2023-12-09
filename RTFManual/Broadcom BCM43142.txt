@@ -1,0 +1,2 @@
+Broadcom BCM43142 Drivers on Kali Linux:
+https://forums.kali.org/showthread.php?29587-Broadcom-BCM43142-Drivers-on-Kali-Linux
