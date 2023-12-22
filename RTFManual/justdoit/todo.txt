@@ -14,7 +14,7 @@ password rem@&1991 for tor (choose cybername spiderzweb eq) spidernet
  
  virtualbox vs vmware, which one is light weight, or better docker and linode?
  ETHICAL_TEST_HAT:
-javascript auto click button from link visiting (fakebook) mimic server localhost
+javascript auto click button from link visiting (fakebook) mimic server localhost:8080
  
 
  
