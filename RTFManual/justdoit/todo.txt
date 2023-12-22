@@ -5,14 +5,16 @@ and/or C) looks for patterns in incoming traffic
 and sends alerts if anything unusual is found,
 
  In general rather than trying to shove all traffic through Tor
- it's much safer to hijack someone else's assets
- and perform your attack from there. (img.keyloger)
- 
-password rem0&1991 for tor (choose cybername spiderzweb eq) spidernet
+ it's much safer to go trough other assets (cybercofee)
+ and perform. 
+
+(img.keyloger)
+PROTECT YOURSELF: 
+password rem@&1991 for tor (choose cybername spiderzweb eq) spidernet
  
  virtualbox vs vmware, which one is light weight, or better docker and linode?
- 
-javascript auto click button from link visiting (facebook) mimic server localhost
+ ETHICAL_TEST_HAT:
+javascript auto click button from link visiting (fakebook) mimic server localhost
  
 
  
